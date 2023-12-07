@@ -46,6 +46,3 @@ private fun String.parse(): Pair<List<Int>, List<Int>> {
   val (winning, mine) = numbers.split("|")
   return Pair(winning.toInts(), mine.toInts())
 }
-
-private fun String.toInts(delimiter: Regex = "\\s+".toRegex()) =
-    trim().split(delimiter).map { it.toInt() }
